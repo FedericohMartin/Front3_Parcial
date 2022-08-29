@@ -5,12 +5,23 @@
 // MÉTODOS: App debe tener un método para aumentar este número y que pueda ser ejecutado por su nieto Item.
 // PROPS: App deberá pasar por props lo necesario a sus componenetes internos.
 
+import { useState } from "react";
+import { getData }  from './components/data.json'
+
 function App() {
+
+  const [counter, setCounter] = useState(0)
+
+  const data = getData()
+
+  const addCounter = () =>{
+    setCounter(counter + 1)
+  }
 
   return (
     <div className="App">
-      <Cabecera />
-      <Listado />
+      <Cabecera Counter/>
+      <Listado addCounter={addCounter} data/>
     </div>
   );
 }
