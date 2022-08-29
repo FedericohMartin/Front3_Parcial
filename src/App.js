@@ -6,13 +6,10 @@
 // PROPS: App deberá pasar por props lo necesario a sus componenetes internos.
 
 import { useState } from "react";
-import { getData }  from './components/data.json'
 
 function App() {
 
   const [counter, setCounter] = useState(0)
-
-  const data = getData()
 
   const addCounter = () =>{
     setCounter(counter + 1)
@@ -20,8 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <Cabecera Counter/>
-      <Listado addCounter={addCounter} data/>
+      <Cabecera counter/>
+      <Listado addCounter={addCounter} />
     </div>
   );
 }
