@@ -6,6 +6,8 @@
 // PROPS: App deberá pasar por props lo necesario a sus componenetes internos.
 
 import { useState } from "react";
+import Cabecera from "./components/Cabecera";
+import Listado from "./components/Listado";
 
 function App() {
 

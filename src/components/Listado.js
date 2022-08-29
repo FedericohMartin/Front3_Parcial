@@ -1,5 +1,7 @@
 import React from 'react'
-import { getData }  from './components/data.json'
+import Item from './Item'
+import getData  from './data.json'
+
 // Debemos importar el listado de objetos del archivo JSON para usarlos como array a la hora de crear cada Item.
 // El componente Listado es el padre de:
 // - varios Item
@@ -9,7 +11,7 @@ import { getData }  from './components/data.json'
 
 export default function Listado({addCounter}) {
 
-  const data = getData()
+  const data = getData
 
   return (
     <div className='container'>
