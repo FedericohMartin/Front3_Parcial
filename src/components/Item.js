@@ -26,7 +26,7 @@ export default function Item({addCounter, key, name, description, stockInit }) {
     <div className='producto'>
       <h3>{name}</h3>
       <p>{description}</p>
-      <h5>En stock: <span>{stock}</span></h5>
+      <h5>En stock: <span>{stock < 1 ? "Agotado" : stock}</span></h5>
       {stock > 0 
       ? <button onClick={() => onClickHandler()}>COMPRAR</button>
       : <button disabled>SIN STOCK</button>
