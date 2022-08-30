@@ -13,13 +13,14 @@ function App() {
 
   const [counter, setCounter] = useState(0)
 
-  const addCounter = () =>{
+  function addCounter() {
     setCounter(counter + 1)
+    console.log('Incrementando counter en App')
   }
 
   return (
     <div className="App">
-      <Cabecera counter/>
+      <Cabecera counter={counter}/>
       <Listado addCounter={addCounter} />
     </div>
   );

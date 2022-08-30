@@ -16,7 +16,7 @@ export default function Listado({addCounter}) {
   return (
     <div className='container'>
       {
-      data.map((item) => <Item addCounter key={item.id} name={item.producto.nombre} description={item.producto.descripcion} stockInit={item.stock}/>)
+      data.map((item) => <Item addCounter={addCounter} key={item.id} name={item.producto.nombre} description={item.producto.descripcion} stockInit={item.stock}/>)
       }
     </div>
   )
