@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -48,6 +49,7 @@ header p span {
 .producto img{
   width: 200px;
 }
+
 .producto h5{
   text-align: center;
 }
@@ -59,6 +61,7 @@ header p span {
   color: rgb(155, 0, 0);
   border-radius: 3px;
 }
+
 .producto button{
   padding: 5px;
   text-transform: uppercase;

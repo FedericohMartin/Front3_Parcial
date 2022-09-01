@@ -15,7 +15,6 @@ function App() {
 
   function addCounter() {
     setCounter(counter + 1)
-    console.log('Incrementando counter en App')
   }
 
   return (
